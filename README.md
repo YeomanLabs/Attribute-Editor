@@ -2,8 +2,6 @@
 
 A desktop app for adding custom properties to Intune-managed devices — asset tags, locations, cost centres, anything you need — and for running bulk actions across a selection. Written in Windows PowerShell and WPF, in a single script, with no third-party assemblies.
 
-![Device Inventory](docs/screenshot.png)
-
 Properties can optionally be mirrored onto Entra device extension attributes, which makes them usable in dynamic group rules — the thing the Intune notes field can't do on its own.
 
 ## Why
@@ -149,6 +147,4 @@ Three things that are easy to get wrong in a PowerShell WPF app and are handled 
 - Renaming a slot doesn't migrate existing values; the old property name stays in notes on devices that have it.
 - Windows-only actions are filtered out for other platforms before the call.
 
-## License
 
-MIT. See [LICENSE](LICENSE).
